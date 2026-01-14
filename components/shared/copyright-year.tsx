@@ -15,7 +15,7 @@ function Year() {
  */
 export function CopyrightYear() {
   return (
-    <Suspense fallback={<span>2025</span>}>
+    <Suspense fallback={<span>2026</span>}>
       <Year />
     </Suspense>
   );
