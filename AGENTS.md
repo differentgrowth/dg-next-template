@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -63,6 +63,53 @@ Uses **Ultracite** with **Biome** for linting and formatting:
 - Config in `biome.jsonc` extends ultracite presets for Next.js + React
 - Pre-commit hook via Husky automatically checks staged files
 - Run `pnpm format` or `pnpm check` before committing
+
+## Conventional Commits
+
+Use Conventional Commits for all commits in this repository.
+
+Format:
+
+```text
+<type>(<scope>): <subject>
+```
+
+Allowed types:
+- `feat` - new feature
+- `fix` - bug fix
+- `perf` - performance improvement
+- `refactor` - code change without behavior change
+- `docs` - documentation only
+- `style` - formatting/style-only changes
+- `test` - tests added or updated
+- `build` - build/dependency/tooling for packaging
+- `ci` - CI pipeline/workflow changes
+- `chore` - maintenance task
+- `revert` - revert a previous commit
+
+Recommended scopes:
+- `app`
+- `components`
+- `ui`
+- `layout`
+- `lib`
+- `config`
+- `styles`
+- `e2e`
+- `deps`
+- `tooling`
+- `docs`
+
+Rules:
+- Use imperative verbs in subject (`add`, `fix`, `remove`, `optimize`)
+- Keep subject lowercase and concise (target <= 72 chars)
+- Do not end subject with a period
+- Use `!` for breaking changes and add `BREAKING CHANGE:` footer
+
+Examples:
+- `feat(app): add landing page variant`
+- `fix(ui): prevent mobile navbar overflow`
+- `perf(lib): parallelize dashboard requests`
 
 ## Testing
 

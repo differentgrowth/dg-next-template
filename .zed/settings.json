@@ -1,19 +1,5 @@
 {
   "colorize_brackets": false,
-  "git": {
-    "branch_picker": {
-      "show_author_name": false
-    },
-    "blame": {
-      "show_avatar": false
-    }
-  },
-  "minimap": {
-    "show": "auto"
-  },
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
   "inlay_hints": {
     "show_value_hints": true,
     "show_type_hints": true,
@@ -29,27 +15,6 @@
       "platform": false,
       "function": false
     }
-  },
-  "buffer_font_features": {
-    "calt": false,
-    "liga": false
-  },
-  "ui_font_features": {
-    "calt": false,
-    "liga": false
-  },
-  "vim_mode": false,
-  "icon_theme": {
-    "mode": "system",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)"
-  },
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
-  "theme": {
-    "mode": "system",
-    "light": "Vercel Light",
-    "dark": "Vercel Dark"
   },
   "formatter": "language_server",
   "format_on_save": "on",

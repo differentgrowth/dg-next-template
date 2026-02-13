@@ -133,6 +133,8 @@ const nextConfig: NextConfig = {
 
     // Enable Turbopack file system cache for faster dev rebuilds
     turbopackFileSystemCacheForDev: true,
+    // Enable Turbopack file system cache for faster build rebuilds
+    turbopackFileSystemCacheForBuild: true,
   },
 };
 
